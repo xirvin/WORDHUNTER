@@ -39,8 +39,8 @@ pip install pyautogui pyperclip pynput
 
 Place these JSON files in the root directory:
 
-- `english_words.json`
-- `spanish_words.json`
+- `english_words.json` (Source: [dwyl/english-words](https://github.com/dwyl/english-words))
+- `spanish_words.json` (Source: [eymenefealtun/all-words-in-all-languages](https://github.com/eymenefealtun/all-words-in-all-languages))
 
 Each file must be structured like this:
 
