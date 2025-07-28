@@ -1,36 +1,93 @@
-# WORDHUNTER
-# 🔠 AutoTyper for Spanish Word Puzzles
+# 🧠 WORDHUNTER
 
-**AutoTyper** is a Python desktop application designed to automatically type (or paste) Spanish words into any active window. It helps solve word games or puzzles by generating all valid words from a set of letters, ensuring a specific required letter is present, and sending them to the selected application using simulated keystrokes or clipboard pasting.
+**WORDHUNTER** is an intelligent auto-typer built for word puzzle games. It types out valid words based on user-specified letters, dictionary language, and game logic.
+
+🚀 [Live on GitHub](https://github.com/xirvin/WORDHUNTER/)
 
 ---
 
 ## ✨ Features
 
-- ✅ GUI to input allowed letters
-- ✅ Automatically finds valid Spanish words (length 4–7)
-- ✅ Enforces a required letter (the 4th in the input)
-- ✅ Excludes words where the required letter is at the end
-- ✅ Supports ascending or descending paste order
-- ✅ Pasting via clipboard (optimized for macOS)
-- ✅ Global hotkey (⌘ + Shift + S) to stop typing anytime
-- ✅ Save results to a `.txt` file
-- ✅ Adjustable typing delay and initial wait time
+- 🔤 Supports English and Spanish dictionaries
+- 🎯 Enforces required center letter and allows/disallows repeated letters
+- 🪄 Automatically types words into any input box (paste + enter)
+- ⏱️ Customizable typing delay and start wait time
+- 💾 Option to save results to a file
+- 🔡 Sort words in ascending or descending order by length
+- 🔒 Global hotkey `⌘ + Shift + S` to stop typing
 
 ---
 
-## 🖥️ Interface
+## 🖼️ Screenshot
 
-- **Start Typing**: Begins processing and typing words
-- **Stop**: Halts typing immediately
-- **Settings**: Configure delay, wait time, file path, and word paste order
+> Coming soon...
 
 ---
 
-## 🛠️ Setup Instructions
+## 🛠 Requirements
 
-### 1. Clone the repository
+- Python 3.8+
+- Install required packages:
 
 ```bash
-git clone https://github.com/your-username/auto-spanish-typer.git
-cd auto-spanish-typer
+pip install pyautogui pyperclip pynput
+```
+
+---
+
+## 📦 Dictionary Files
+
+Place these JSON files in the root directory:
+
+- `english_words.json`
+- `spanish_words.json`
+
+Each file must be structured like this:
+
+```json
+{
+  "4": ["word", "more", "game"],
+  "5": ["puzzle", "brain"],
+  ...
+}
+```
+
+---
+
+## 🧑‍💻 Usage
+
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/xirvin/WORDHUNTER.git
+   cd WORDHUNTER
+   ```
+
+2. Run the application:
+   ```bash
+   python wordhunter.py
+   ```
+
+3. Enter letters (minimum 4).
+4. Press **Start Typing**.
+5. Use **Settings** to:
+   - Switch between languages
+   - Set typing delay
+   - Save to file
+   - Customize word logic
+
+---
+
+## ⌨️ Hotkeys
+
+- **Stop Typing Globally**: `⌘ + Shift + S`  
+  *(Windows: Replace ⌘ with Ctrl if modified)*
+
+---
+
+---
+
+## 📄 License
+
+MIT License © [xirvin](https://github.com/xirvin)
+
+---
